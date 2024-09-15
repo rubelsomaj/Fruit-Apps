@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="15dp"
+        app:cardMaxElevation="15dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/cardView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="15dp"
+                app:cardMaxElevation="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/fruitImg"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/o"
+                    app:civ_border_color="#BF360C"
+                    app:civ_border_width="3dp">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/fruitName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Orange"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/cardView"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="@+id/cardView"
+                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+            <TextView
+                android:id="@+id/fruitPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Price:5$"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/fruitName"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/fruitName"
+                app:layout_constraintTop_toBottomOf="@+id/fruitName"/>
+
+            <TextView
+                android:id="@+id/fruitQnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Qunatity:120"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/fruitPrice"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/fruitPrice"
+                app:layout_constraintTop_toBottomOf="@+id/fruitPrice"/>
+
+            <TextView
+                android:id="@+id/fruitDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="72dp"
+                android:text="Orange:"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/fruitQnt"
+                app:layout_constraintTop_toBottomOf="@+id/fruitQnt" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
